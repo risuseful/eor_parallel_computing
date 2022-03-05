@@ -136,7 +136,9 @@ tf <- Sys.time()
 
 tf - ti
 
-Here is another example of parallel computing.  Instead of using icount(trials) (see argument in foreach()), we can use a normal indices, like i, or j.  We don't need to pass these indices into the function, since R treats these indices as global values. 
+# Here is another example of parallel computing.  Instead of using icount(trials) (see argument in foreach()), 
+# we can use a normal indices, like i, or j.  We don't need to pass these indices into the function, since R treats these indices as global values. 
+
 
 cl <- makeCluster(cores-1) # not to overload PC
 
